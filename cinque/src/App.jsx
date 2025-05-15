@@ -469,10 +469,11 @@ function HeroBanner() {
               Empowering Your Digital Journey
             </h1>
             <p className="lead mb-4 text-muted-light" style={{ fontSize: '1.2rem' }}>
-              CinqueLabs delivers cutting-edge technological solutions that drive growth,
+              At CinqueLabs, we deliver cutting-edge technological solutions that drive growth,
               enhance operational efficiency, and enable clients to seamlessly navigate
               the evolving digital landscape.
             </p>
+            <p className="lead mb-4 text-muted-light" style={{ fontSize: '1.2rem' }}>Transforming ideas into reality, we empower businesses with innovative digital solutions that optimize performance and unlock new possibilities in an ever-changing world.</p>
             <div className="d-flex flex-wrap gap-3 mt-5">
               <a href="#" className="btn btn-lg px-4 py-3 text-white fw-medium btn-glow" 
                  style={{ background: 'var(--gradient-primary)', borderRadius: '50px' }}>
