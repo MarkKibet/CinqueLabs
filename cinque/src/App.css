@@ -120,18 +120,17 @@ body {
 
 /* 🎨 Translucent purple background */
 .dropdown-menu {
-  background: rgba(138, 43, 226, 0.8) !important; /* Rich translucent purple */
-  backdrop-filter: blur(10px); /* Smooth glass-like effect */
-  border-radius: 12px;
-}
-
-
-.dropdown-menu {
+  position: fixed !important; /* Fixes it at screen level */
+  top: 75px; /* Adjust based on your navbar height */
+  left: 0 !important; /* Forces it to start at the extreme left */
+  width: 100vw !important; /* Spans the entire width of the viewport */
   background: rgba(138, 43, 226, 0.8) !important; /* Translucent purple */
-  backdrop-filter: blur(10px); /* Smooth glass-like effect */
+  backdrop-filter: blur(12px); /* Glass-like effect */
   padding: 20px;
-  display: flex;
+  border-radius: 0; /* Removes rounded edges */
+  z-index: 9999; /* Ensures it appears above everything */
 }
+
 
 .dropdown-items {
   flex: 1; /* Allows text to take full width */
@@ -145,6 +144,11 @@ body {
 .dropdown-image img {
   width: 100%;
   border-radius: 10px;
+}
+.dropdown-item:hover {
+  background-color: rgba(75, 0, 130, 0.8) !important; /* Dark Purple */
+  color: white !important; /* Ensures text stays visible */
+  border-radius: 8px; /* Optional: Smooth rounded effect */
 }
 
 
