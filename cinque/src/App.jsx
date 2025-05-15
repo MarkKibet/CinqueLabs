@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 // Custom CSS for futuristic design with improved text visibility
 const GlobalStyles = () => {
@@ -466,7 +467,7 @@ function HeroBanner() {
               <a href="#" className="btn btn-lg px-4 py-3 text-white fw-medium btn-glow" 
                  style={{ background: 'var(--gradient-primary)', borderRadius: '50px' }}>
                 <span className="d-flex align-items-center">
-                  Get Started <Zap size={18} className="ms-2" />
+                Build your Dream App With us<Zap size={18} className="ms-2" />
                 </span>
               </a>
               <a href="#" className="btn btn-lg px-4 py-3 fw-medium text-white" 
@@ -504,8 +505,8 @@ function HeroBanner() {
                 transform: 'rotate(-15deg)'
               }}></div>
               <div className="position-absolute" style={{ 
-                width: '80px', 
-                height: '80px', 
+                width: '0px', 
+                height: '0px', 
                 borderRadius: '16px', 
                 background: 'var(--gradient-accent)',
                 animation: 'float 8s ease-in-out infinite',
@@ -515,6 +516,47 @@ function HeroBanner() {
                 boxShadow: '0 20px 30px rgba(0,0,0,0.2)',
                 transform: 'rotate(10deg)'
               }}></div>
+              <div className="position-relative">
+  {/* React Icon
+  <i className="fab fa-react position-absolute text-info fs-1"
+     style={{ left: "10%", top: "100%", animation: "float 6s infinite" }}></i> */}
+
+  {/* JavaScript Icon
+  <i className="fab fa-js position-absolute text-warning fs-1"
+     style={{ right: "15%", bottom: "10%", animation: "float 20s infinite" }}></i> */}
+
+  {/* Node.js Icon */}
+  <i className="fab fa-node-js position-absolute text-success fs-1"
+     style={{ left: "50%", top: "30%", animation: "float 20s infinite" }}></i>
+
+  {/* Docker Icon
+  <i className="fab fa-docker position-absolute text-primary fs-1"
+     style={{ right: "40%", bottom: "5%", animation: "float 9s infinite" }}></i> */}
+</div>
+<div className="position-relative d-flex justify-content-center align-items-center">
+  {/* Engine Core (Central Icon) */}
+  <div className="position-absolute d-flex justify-content-center align-items-center bg-dark rounded-circle"
+       style={{ width: '80px', height: '80px', zIndex: 3 }}>
+    <i className="bi bi-cpu text-white fs-2"></i>
+  </div>
+
+  {/* Rotating Outer Rings */}
+  <div className="spinner-border text-primary position-absolute"
+       style={{ width: '120px', height: '120px', animationDuration: '2s', zIndex: 2 }} role="status"></div>
+  <div className="spinner-border text-danger position-absolute"
+       style={{ width: '160px', height: '160px', animationDuration: '3s', zIndex: 1 }} role="status"></div>
+
+  {/* Moving Parts (Inner Components) */}
+  <div className="position-absolute bg-green rounded-circle d-flex align-items-center justify-content-center"
+       style={{ width: '40px', height: '40px', top: '15%', left: '30%', zIndex: 2 }}>
+    <i className="bi bi-gear-fill text-dark fs-4"></i>
+  </div>
+  <div className="position-absolute bg-purple rounded-circle d-flex align-items-center justify-content-center"
+       style={{ width: '40px', height: '40px', bottom: '20%', right: '25%', zIndex: 2 }}>
+    <i className="bi bi-wrench-adjustable text-dark fs-4"></i>
+  </div>
+</div>
+
               
               {/* Main hero image */}
               <div className="glass-card p-3 shadow-lg moving-border" 
