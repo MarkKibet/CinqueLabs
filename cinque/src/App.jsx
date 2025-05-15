@@ -331,7 +331,7 @@ function Navbar() {
         <a className="navbar-brand d-flex align-items-center" href="/">
           <div className="me-2 rounded d-flex align-items-center justify-content-center moving-border" 
                style={{ width: '40px', height: '40px', background: 'var(--gradient-primary)' }}>
-            <span className="text-white fw-bold">CL</span>
+            <span className="text-white fw-bold"></span>
           </div>
           <span className="fw-bold text-gradient">CinqueLabs</span>
         </a>
@@ -1061,7 +1061,7 @@ function Footer() {
             <h5 className="mb-3">Contact Info</h5>
             <p className="mb-2">
               <i className="bi bi-geo-alt me-2"></i>
-              123 Innovation Avenue, Tech City
+              Ngong Road, Nairobi, Kenya
             </p>
             <p className="mb-2">
               <i className="bi bi-envelope me-2"></i>
@@ -1069,7 +1069,7 @@ function Footer() {
             </p>
             <p className="mb-4">
               <i className="bi bi-telephone me-2"></i>
-              +1 (555) 123-4567
+              +254 723 456 789
             </p>
             <form>
               <div className="input-group">
