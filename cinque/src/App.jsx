@@ -333,7 +333,7 @@ function Navbar() {
       <a className="navbar-brand d-flex align-items-center" href="/">
         {/* Logo behind text */}
         <div className="me-2 rounded d-flex align-items-center justify-content-center moving-border" 
-             style={{ width: '160px', height: '70px', background: 'var(--gradient-primary)' }}>
+             style={{ width: '165px', height: '70px', background: 'var(--gradient-primary)' }}>
           <img src="/mylogo.png" alt="CinqueLabs Logo" className="img-fluid" 
                style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
         </div>
@@ -355,61 +355,63 @@ function Navbar() {
         </button>
 
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarContent">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" id="whatWeDoDropdown"
-                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                What We Do <ChevronDown size={16} className="ms-1" />
-              </a>
-              <ul className="dropdown-menu rounded-3 border-0 shadow-lg" aria-labelledby="whatWeDoDropdown">
-                <li><a className="dropdown-item py-2" href="#">Software Development</a></li>
-                <li><a className="dropdown-item py-2" href="#">Mobile Applications</a></li>
-                <li><a className="dropdown-item py-2" href="#">Web Development</a></li>
-                <li><a className="dropdown-item py-2" href="#">Digital Transformation</a></li>
-                <li><a className="dropdown-item py-2" href="#">Consulting Services</a></li>
-              </ul>
-            </li>
-            
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" id="technologyDropdown" 
-                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Technology <ChevronDown size={16} className="ms-1" />
-              </a>
-              <ul className="dropdown-menu rounded-3 border-0 shadow-lg" aria-labelledby="technologyDropdown">
-                <li><a className="dropdown-item py-2" href="#">Frontend Development</a></li>
-                <li><a className="dropdown-item py-2" href="#">Backend Systems</a></li>
-                <li><a className="dropdown-item py-2" href="#">Cloud Services</a></li>
-                <li><a className="dropdown-item py-2" href="#">Data Analytics</a></li>
-                <li><a className="dropdown-item py-2" href="#">Artificial Intelligence</a></li>
-              </ul>
-            </li>
-            
-            <li className="nav-item">
-              <a className="nav-link" href="#">About Us</a>
-            </li>
-            
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle d-flex align-items-center" href="#" id="partnersDropdown" 
-                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Who We Work With <ChevronDown size={16} className="ms-1" />
-              </a>
-              <ul className="dropdown-menu rounded-3 border-0 shadow-lg" aria-labelledby="partnersDropdown">
-                <li><a className="dropdown-item py-2" href="#">Enterprise Clients</a></li>
-                <li><a className="dropdown-item py-2" href="#">Startups</a></li>
-                <li><a className="dropdown-item py-2" href="#">SMEs</a></li>
-                <li><a className="dropdown-item py-2" href="#">NGOs</a></li>
-                <li><a className="dropdown-item py-2" href="#">Government Agencies</a></li>
-              </ul>
-            </li>
-            
-            <li className="nav-item ms-lg-3">
-              <a className="btn px-4 text-white btn-glow position-relative" href="#" 
-                 style={{ background: 'var(--gradient-primary)', borderRadius: '30px' }}>
-                Contact Us
-              </a>
-            </li>
-          </ul>
-        </div>
+  <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+    <li className="nav-item dropdown">
+  <a className="nav-link fw-bold text-purple d-flex align-items-center" href="#" 
+     id="dropdownMenu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    What We Do <ChevronDown size={18} className="ms-2" />
+  </a>
+  <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu1">
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Software Development</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Mobile Applications</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Web Development</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Digital Transformation</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Consulting Services</a></li>
+  </ul>
+</li>
+
+<li className="nav-item dropdown">
+  <a className="nav-link fw-bold text-purple d-flex align-items-center" href="#" 
+     id="dropdownMenu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Technology <ChevronDown size={18} className="ms-2" />
+  </a>
+  <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu2">
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Backend Systems</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Cloud Services</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Data Analytics</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Artificial Intelligence</a></li>
+  </ul>
+</li>
+
+<li className="nav-item dropdown">
+  <a className="nav-link fw-bold text-purple d-flex align-items-center" href="#" 
+     id="dropdownMenu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Who We Work With <ChevronDown size={18} className="ms-2" />
+  </a>
+  <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu3">
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Enterprise Clients</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Startups</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">SMEs</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">NGOs</a></li>
+    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Government Agencies</a></li>
+  </ul>
+</li>
+
+      <li className="nav-item">
+      <a className="nav-link fw-bold text-purple" href="#">About Us</a>
+    </li>
+
+
+    <li className="nav-item ms-lg-3">
+      <a className="btn px-4 text-white btn-glow position-relative fw-bold" href="#" 
+         style={{ background: 'var(--gradient-primary)', borderRadius: '30px' }}>
+        Contact Us
+      </a>
+    </li>
+  </ul>
+</div>
+
       </div>
     </nav>
   );
@@ -461,32 +463,47 @@ function HeroBanner() {
       <div className="container py-5 position-relative">
         <div className="row align-items-center min-vh-75" style={{ minHeight: '85vh' }}>
           <div className="col-lg-6 py-5" data-aos="fade-right">
-            <div className="badge bg-dark text-secondary mb-4 px-3 py-2 rounded-pill">
-              <span className="me-2" style={{ color: 'var(--secondary)' }}>•</span> 
-              Next Gen Solutions
-            </div>
-            <h1 className="display-4 fw-bold mb-4" style={{ color: '#5D3FD3' }}>
-              Empowering Your Digital Journey
-            </h1>
-            <p className="lead mb-4 text-muted-light" style={{ fontSize: '1.2rem' }}>
-              At CinqueLabs, we deliver cutting-edge technological solutions that drive growth,
-              enhance operational efficiency, and enable clients to seamlessly navigate
-              the evolving digital landscape.
-            </p>
-            <p className="lead mb-4 text-muted-light" style={{ fontSize: '1.2rem' }}>Transforming ideas into reality, we empower businesses with innovative digital solutions that optimize performance and unlock new possibilities in an ever-changing world.</p>
-            <div className="d-flex flex-wrap gap-3 mt-5">
-              <a href="#" className="btn btn-lg px-4 py-3 text-white fw-medium btn-glow" 
-                 style={{ background: 'var(--gradient-primary)', borderRadius: '50px' }}>
-                <span className="d-flex align-items-center">
-                Build your Dream App With us<Zap size={18} className="ms-2" />
-                </span>
-              </a>
-              <a href="#" className="btn btn-lg px-4 py-3 fw-medium text-white" 
-                 style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50px', backdropFilter: 'blur(10px)' }}>
-                Explore Solutions
-              </a>
-            </div>
             
+            
+           <div className="badge bg-dark text-info mb-4 px-3 py-2 rounded-pill">
+  <span className="me-2" style={{ color: 'var(--secondary)' }}>•</span> 
+  Next Gen Solutions
+</div>
+
+<h1 className="display-3 fw-bold mb-4 text-gradient">
+  Empowering Your Digital Journey
+</h1>
+
+<p className="lead mb-4 text-muted-light" style={{ fontSize: '1.3rem' }}>
+  At CinqueLabs, we craft innovative technological solutions designed to drive growth, 
+  boost efficiency, and help businesses thrive in an evolving digital landscape. 
+</p>
+
+<p className="lead mb-4 text-muted-light" style={{ fontSize: '1.3rem' }}>
+  From concept to reality, we engineer digital experiences that maximize potential, 
+  enhance interactivity, and unlock limitless opportunities.
+</p>
+
+
+<div className="ripple-container">
+  <div className="ripple"></div>
+</div>
+
+<div className="d-flex flex-wrap gap-3 mt-5">
+  <a href="#" className="btn btn-lg px-4 py-3 text-white fw-medium btn-glow" 
+     style={{ background: 'var(--gradient-primary)', borderRadius: '50px', boxShadow: '0px 5px 15px rgba(0,0,0,0.2)' }}>
+    <span className="d-flex align-items-center">
+      Build Your Dream App With Us <Zap size={18} className="ms-2" />
+    </span>
+  </a>
+  
+  <a href="#" className="btn btn-lg px-4 py-3 fw-medium text-white" 
+     style={{ backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: '50px', backdropFilter: 'blur(12px)', boxShadow: '0px 4px 10px rgba(0,0,0,0.15)' }}>
+    Explore Solutions
+  </a>
+</div>
+
+
             <div className="d-flex align-items-center mt-5 pt-3">
               {/* <div className="d-flex">
                 {[1, 2, 3, 4].map((i) => (
