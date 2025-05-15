@@ -327,16 +327,25 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar navbar-expand-lg sticky-top ${isScrolled ? 'shadow-sm' : ''}`} 
-         style={{ transition: 'all 0.3s ease' }}>
-      <div className="container">
-        <a className="navbar-brand d-flex align-items-center" href="/">
-          <div className="me-2 rounded d-flex align-items-center justify-content-center moving-border" 
-               style={{ width: '40px', height: '40px', background: 'var(--gradient-primary)' }}>
-            <span className="text-white fw-bold"></span>
-          </div>
-          <span className="fw-bold text-gradient">CinqueLabs</span>
-        </a>
+  <nav className={`navbar navbar-expand-lg sticky-top ${isScrolled ? 'shadow-sm' : ''}`} 
+       style={{ transition: 'all 0.3s ease' }}>
+    <div className="container">
+      <a className="navbar-brand d-flex align-items-center" href="/">
+        {/* Logo behind text */}
+        <div className="me-2 rounded d-flex align-items-center justify-content-center moving-border" 
+             style={{ width: '160px', height: '70px', background: 'var(--gradient-primary)' }}>
+          <img src="/mylogo.png" alt="CinqueLabs Logo" className="img-fluid" 
+               style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
+
+        {/* Enlarged & Stylish Text */}
+   
+
+  <span className="fw-bold text-gradient display-5 text-shadow">
+    <span className="text-purple"> C</span>inque<span className="text-purple">L</span>abs</span>
+    
+
+      </a>
         
         <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#navbarContent" aria-controls="navbarContent" 
