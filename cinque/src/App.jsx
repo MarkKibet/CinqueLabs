@@ -362,12 +362,27 @@ function Navbar() {
     What We Do <ChevronDown size={18} className="ms-2" />
   </a>
   <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu1">
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Software Development</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Mobile Applications</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Web Development</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Digital Transformation</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Consulting Services</a></li>
-  </ul>
+   <div className="container-fluid">
+    <div className="row">
+     
+      <div className="col-md-6">
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Software Development</a></li>
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Mobile Applications</a></li>
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Web Development</a></li>
+      </div>
+
+      
+      <div className="col-md-6">
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Digital Transformation</a></li>
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Consulting Services</a></li>
+        <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Cloud Solutions</a></li>
+      </div>
+    </div>
+  </div>
+   <div className="dropdown-image ms-4">
+    <img src="/image.png" alt="Digital Solutions" className="img-fluid rounded shadow-sm" />
+  </div>
+</ul>
 </li>
 
 <li className="nav-item dropdown">
@@ -376,11 +391,19 @@ function Navbar() {
     Technology <ChevronDown size={18} className="ms-2" />
   </a>
   <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu2">
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
+    <div className="row">
+       <div className="col-md-6"> 
+       <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Frontend Development</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Backend Systems</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Cloud Services</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Data Analytics</a></li>
+     </div>
+   <div className="col-md-6">
+     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Data Analytics</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Artificial Intelligence</a></li>
+    </div> 
+       </div>
+    
+   
   </ul>
 </li>
 
@@ -390,11 +413,20 @@ function Navbar() {
     Who We Work With <ChevronDown size={18} className="ms-2" />
   </a>
   <ul className="dropdown-menu bg-opacity rounded-3 shadow-lg w-500" aria-labelledby="dropdownMenu3">
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Enterprise Clients</a></li>
+     <div className="row"> 
+       <div className="col-md-6"> 
+          <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Enterprise Clients</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Startups</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">SMEs</a></li>
-    <li><a className="dropdown-item py-3 fw-bold text-light" href="#">NGOs</a></li>
+        </div> 
+     <div className="col-md-6"> 
+         <li><a className="dropdown-item py-3 fw-bold text-light" href="#">NGOs</a></li>
     <li><a className="dropdown-item py-3 fw-bold text-light" href="#">Government Agencies</a></li>
+    
+     </div>
+ 
+     </div>
+   
   </ul>
 </li>
 
