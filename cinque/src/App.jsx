@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Code, Phone, Globe, Zap, Database, Cloud, LineChart, ShieldCheck, Layers } from "lucide-react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./App.css"; // Ensure the correct path
 
 // Custom CSS for futuristic design with improved text visibility
 const GlobalStyles = () => {
@@ -541,16 +542,18 @@ function HeroBanner() {
   </div>
 
   {/* Rotating Outer Rings */}
-  <div className="spinner-border text-primary position-absolute"
-       style={{ width: '120px', height: '120px', animationDuration: '2s', zIndex: 2 }} role="status"></div>
-  <div className="spinner-border text-danger position-absolute"
-       style={{ width: '160px', height: '160px', animationDuration: '3s', zIndex: 1 }} role="status"></div>
+ {/* Rotating Outer Rings */}
+<div className="spinner-border text-primary position-absolute"
+     style={{ width: '120px', height: '120px', animationDuration: '2s', zIndex: 2 }} role="status"></div>
+
+<div className="spinner-border text-purple position-absolute"
+     style={{ width: '160px', height: '160px', animationDuration: '3s', zIndex: 1 }} role="status"></div>
 
   {/* Moving Parts (Inner Components) */}
-  <div className="position-absolute bg-green rounded-circle d-flex align-items-center justify-content-center"
+  {/* <div className="position-absolute bg-green rounded-circle d-flex align-items-center justify-content-center"
        style={{ width: '40px', height: '40px', top: '15%', left: '30%', zIndex: 2 }}>
     <i className="bi bi-gear-fill text-dark fs-4"></i>
-  </div>
+  </div> */}
   <div className="position-absolute bg-purple rounded-circle d-flex align-items-center justify-content-center"
        style={{ width: '40px', height: '40px', bottom: '20%', right: '25%', zIndex: 2 }}>
     <i className="bi bi-wrench-adjustable text-dark fs-4"></i>

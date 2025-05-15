@@ -1,3 +1,84 @@
+/* 🎨 Custom Theme Colors */
+:root {
+  --primary-color: #5D3FD3;  /* Deep purple */
+  --accent-color: #8A2BE2;  /* Vibrant violet */
+  --secondary-color: #4B0082; /* Rich indigo */
+  --background-light: #F8F9FA; /* Soft white */
+  --text-dark: #212529; /* Deep gray */
+  --tech-blue: #3D3FB3; /* Techy blue */
+  --highlight: #FFD700; /* Gold highlight */
+}
+
+/* 🖥️ General Styles */
+body {
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  color: var(--text-dark);
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* 🔥 Floating Tech Icons */
+.floating-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: var(--tech-blue);
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ⚙️ Rotating Rings */
+.spinner-blue {
+  color: var(--tech-blue);
+  width: 120px;
+  height: 120px;
+  animation-duration: 2s;
+}
+
+.spinner-purple {
+  color: var(--accent-color);
+  width: 160px;
+  height: 160px;
+  animation-duration: 3s;
+}
+
+/* 🌟 Smooth Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🎬 Hover Effects */
+.icon-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* 🌍 Parallax Effect */
+.parallax-section {
+  background-image: url('/your-image.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* ✨ Pulse Effect */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+  animation: pulse 3s infinite;
+}
+
+/* 🛠️ Wrench & Gear Colors */
+.bg-purple {
+  background-color: var(--accent-color) !important;
+}
+
+.text-purple {
+  color: var(--accent-color) !important;
+}
 
 
 /* #root {
