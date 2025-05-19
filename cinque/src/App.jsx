@@ -577,21 +577,21 @@ function HeroBanner() {
                 transform: 'rotate(10deg)'
               }}></div>
               <div className="position-relative">
-  {/* React Icon
+  {/* React Icon */}
   <i className="fab fa-react position-absolute text-info fs-1"
-     style={{ left: "10%", top: "100%", animation: "float 6s infinite" }}></i> */}
+     style={{ left: "10%", bottom: "5%", animation: "float 6s infinite" }}></i>
 
-  {/* JavaScript Icon
+  
   <i className="fab fa-js position-absolute text-warning fs-1"
-     style={{ right: "15%", bottom: "10%", animation: "float 20s infinite" }}></i> */}
+     style={{ right: "15%", bottom: "10%", animation: "float 9s infinite" }}></i> 
 
-  {/* Node.js Icon */}
+ 
   <i className="fab fa-node-js position-absolute text-success fs-1"
-     style={{ left: "50%", top: "30%", animation: "float 20s infinite" }}></i>
+     style={{ left: "100%", bottom: "30%", animation: "float 9s infinite" }}></i>
 
-  {/* Docker Icon
+  
   <i className="fab fa-docker position-absolute text-primary fs-1"
-     style={{ right: "40%", bottom: "5%", animation: "float 9s infinite" }}></i> */}
+     style={{ right: "100%", bottom: "2%", animation: "float 9s infinite" }}></i>
 </div>
 <div className="position-relative d-flex justify-content-center align-items-center">
   {/* Engine Core (Central Icon) */}
@@ -613,10 +613,10 @@ function HeroBanner() {
        style={{ width: '40px', height: '40px', top: '15%', left: '30%', zIndex: 2 }}>
     <i className="bi bi-gear-fill text-dark fs-4"></i>
   </div> */}
-  <div className="position-absolute bg-purple rounded-circle d-flex align-items-center justify-content-center"
+  {/* <div className="position-absolute bg-purple rounded-circle d-flex align-items-center justify-content-center"
        style={{ width: '40px', height: '40px', bottom: '20%', right: '25%', zIndex: 2 }}>
     <i className="bi bi-wrench-adjustable text-dark fs-4"></i>
-  </div>
+  </div> */}
 </div>
 
               
@@ -630,11 +630,11 @@ function HeroBanner() {
               {/* Floating stats card */}
               <div className="position-absolute glass-card p-3 shadow-lg card-on-dark" style={{ 
                 borderRadius: '20px', 
-                bottom: '-5%',
-                left: '10%',
+                bottom: '-1%',
+                left: '25%',
                 zIndex: 2,
                 minWidth: '220px',
-                animation: 'float 5s ease-in-out infinite',
+                animation: 'float 10s ease-in-out infinite',
               }}>
                 <div className="d-flex align-items-center">
                   <div className="rounded-circle d-flex align-items-center justify-content-center me-3"
@@ -643,7 +643,7 @@ function HeroBanner() {
                   </div>
                   <div>
                     <p className="mb-0 text-white" style={{ fontSize: '0.85rem' }}>Success Rate</p>
-                    <h5 className="mb-0 text-white fw-bold">98.7%</h5>
+                    <h5 className="mb-0 text-white fw-bold">100%</h5>
                   </div>
                 </div>
               </div>
@@ -654,7 +654,7 @@ function HeroBanner() {
                 height: '70px',
                 borderRadius: '16px', 
                 top: '15%',
-                right: '-5%',
+                right: '-11%',
                 zIndex: 2,
                 animation: 'float 7s ease-in-out infinite',
                 background: 'rgba(0,0,0,0.3)'
@@ -1021,17 +1021,17 @@ function TechProcess() {
 function StatsCounter() {
   const stats = [
     {
-      value: "500+",
+      value: "100+",
       label: "Clients Worldwide",
       icon: <Globe size={36} />
     },
     {
-      value: "1,200+",
+      value: "200+",
       label: "Projects Delivered",
       icon: <Code size={36} />
     },
     {
-      value: "98.7%",
+      value: "100%",
       label: "Client Satisfaction",
       icon: <ShieldCheck size={36} />
     },
